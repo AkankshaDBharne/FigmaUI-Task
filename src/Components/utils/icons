@@ -1,0 +1,10 @@
+import { BsLightningChargeFill, BsBrain, BsChatDots, BsEye } from 'react-icons/bs';
+
+const icons = {
+  lightning: <BsLightningChargeFill color="red" size={24} />,
+  brain: <BsBrain color="blue" size={24} />,
+  chat: <BsChatDots color="green" size={24} />,
+  eye: <BsEye color="purple" size={24} />,
+};
+
+export default icons;
