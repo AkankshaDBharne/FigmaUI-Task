@@ -1,0 +1,117 @@
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  .container {
+    margin: 20px;
+  }
+  
+  .column {
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 5%;
+    background-color: white;
+    margin: 20px 0; 
+    width: 100%; 
+  }
+
+ /*First columns */ 
+  .column:first-child {
+    background-color: #5d3efb;
+    border-radius: 5%;
+    color: white;
+    text-align: center;
+    
+  }
+  
+  .circle {
+    position: relative;
+    width: 100px;
+    height: auto;
+    margin: auto;
+    padding: 20px;
+    border-radius: 50%;
+    background: linear-gradient(#4827d3, #7051f3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .circle p {
+    font-size: 40px;
+    font-weight: bold;
+    margin: 10px;
+  }
+  
+  .circle span {
+    font-size: 12px;
+    color: #fff;
+  }
+  
+  .description {
+    margin: 30px;
+  }
+  
+  /*Summary Section - Cards*/
+  .card {
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    padding: 16px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s;
+  }
+  
+  .card:hover {
+    background-color: #f5f5f5;
+  }
+  
+  .card h4,
+  .card p {
+    margin: 0 40px;
+  }
+  
+  .card-header {
+    display: flex;
+    align-items: center;
+  }
+
+  /*Button */
+  
+  .button {
+    margin: 0 60px;
+    padding: 10px;
+    background-color: #5d3efb;
+    color: white;
+    cursor: pointer;
+    align-content: center;
+    border-radius: 20px;
+    width: 70%;
+    border: none;
+  }
+  
+  /* Media Query for Larger Screens */
+  @media only screen and (min-width: 600px) {
+    .column {
+      width: 45%; /* Adjusted width for larger screens */
+    }
+  
+    .column:first-child {
+      width: 30%; /* Adjusted width for larger screens */
+    }
+  
+    .row {
+      display: flex;
+      justify-content: space-around;
+    }
+  }
+  
